@@ -1,12 +1,12 @@
-# Hale Classification of Sunspots
+# Basics of Sunspots
 
 ## Overview
 
-This project focuses on the **Hale classification of sunspots**, a system used to classify sunspot groups based on their **magnetic polarity configuration** and magnetic complexity.
+This project provides an introduction to **sunspots**, one of the most visible manifestations of magnetic activity on the Sun.
 
-Sunspots are regions of intense magnetic activity on the surface of the Sun. Their magnetic structure provides important information about solar activity and can help identify regions that are more likely to produce energetic events such as **solar flares and coronal mass ejections (CMEs)**.
+Sunspots are relatively dark, cooler regions that appear on the Sun's photosphere. They are formed by intense concentrations of magnetic fields that suppress convection and reduce the transport of heat from the solar interior to the surface.
 
-The Hale classification system categorizes sunspot groups according to the arrangement and polarity of their magnetic fields.
+Although they appear dark compared with the surrounding photosphere, sunspots are still extremely hot and emit a large amount of light.
 
 ---
 
@@ -14,81 +14,264 @@ The Hale classification system categorizes sunspot groups according to the arran
 
 The main objectives of this project are:
 
-* To study the Hale classification system for sunspot groups.
-* To process and analyze solar/sunspot observations.
-* To identify the magnetic configuration of sunspot groups.
-* To classify sunspot groups according to their Hale class.
-* To investigate the relationship between sunspot magnetic complexity and solar activity.
-* To develop an automated or semi-automated approach for Hale classification, where applicable.
+* To understand what sunspots are.
+* To study how sunspots form.
+* To understand the structure of a sunspot.
+* To study the properties of sunspots.
+* To understand sunspot groups and their classification.
+* To investigate the relationship between sunspots and solar magnetic activity.
+* To understand the connection between sunspots, solar flares, and other solar phenomena.
 
 ---
 
-## Hale Classification
+## What Are Sunspots?
 
-The Hale classification is primarily based on the **magnetic polarity arrangement** of a sunspot group.
+A **sunspot** is a temporary region on the Sun's photosphere that appears darker than its surroundings because it has a lower temperature.
 
-The major Hale magnetic classes include:
+Sunspots are associated with strong magnetic fields, typically much stronger than the average magnetic field at the solar surface.
 
-| Hale Class           | Description                                                                                                                           |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **α (Alpha)**        | A unipolar sunspot group with a single dominant magnetic polarity.                                                                    |
-| **β (Beta)**         | A bipolar group with a simple separation between opposite magnetic polarities.                                                        |
-| **γ (Gamma)**        | A complex group in which opposite magnetic polarities are irregularly distributed and cannot be classified simply as a bipolar group. |
-| **β-γ (Beta-Gamma)** | A bipolar group with sufficiently complex polarity distribution that no simple line can separate the opposite polarities.             |
-| **δ (Delta)**        | Opposite-polarity umbrae occur within a common penumbra.                                                                              |
-| **β-γ-δ**            | A highly complex group exhibiting both beta-gamma and delta characteristics.                                                          |
+They generally appear as dark regions consisting of:
 
-The **β-γ-δ** configuration is considered particularly magnetically complex and is often associated with highly active solar regions.
+* **Umbra** – the dark central region.
+* **Penumbra** – the lighter, filamentary region surrounding the umbra.
 
----
-
-## Dataset
-
-The project can use solar observations containing information such as:
-
-* Sunspot group identification
-* Observation date and time
-* Sunspot location
-* Magnetic polarity
-* Magnetic field measurements
-* Sunspot images or magnetograms
-* Existing Hale classifications, where available
-
-The dataset used in this project should be placed in the appropriate data directory.
-
-Example:
+### Structure of a Sunspot
 
 ```text
-data/
-├── raw/
-├── processed/
-└── labels/
+        Photosphere
+   ┌───────────────────┐
+   │                   │
+   │    Penumbra       │
+   │      ┌─────┐      │
+   │      │Umbra│      │
+   │      └─────┘      │
+   │                   │
+   └───────────────────┘
 ```
+
+---
+
+## Why Do Sunspots Appear Dark?
+
+Sunspots are cooler than the surrounding photosphere.
+
+Typical photospheric temperature:
+
+```text
+~5,500 K
+```
+
+Typical sunspot umbra temperature:
+
+```text
+~3,000–4,500 K
+```
+
+Because the sunspot is cooler, it emits less visible light and therefore appears darker when viewed against the much hotter photosphere.
+
+The strong magnetic field inhibits convective motion, reducing the transport of heat from deeper layers of the Sun to the photosphere.
+
+---
+
+## Formation of Sunspots
+
+Sunspots are closely related to the Sun's magnetic field.
+
+The Sun rotates differentially, meaning that different parts of the Sun rotate at different angular velocities. This contributes to the stretching and twisting of magnetic field lines.
+
+When concentrated magnetic fields emerge through the photosphere, they can form regions of strong magnetic activity that appear as sunspots.
+
+A simplified process is:
+
+```text
+Solar interior
+      │
+      ▼
+Magnetic field generation
+      │
+      ▼
+Magnetic field becomes concentrated
+      │
+      ▼
+Magnetic flux emerges through photosphere
+      │
+      ▼
+       Sunspot
+```
+
+---
+
+## Sunspot Groups
+
+Sunspots frequently occur in **groups** rather than as isolated spots.
+
+A typical sunspot group may contain:
+
+* Leading sunspots
+* Following sunspots
+* Multiple smaller spots
+* Regions of different magnetic polarity
+
+The arrangement and magnetic structure of these groups provide important information about solar activity.
+
+---
+
+## Sunspot Magnetic Polarity
+
+Sunspots are strongly influenced by magnetic fields.
+
+A sunspot group generally contains regions with opposite magnetic polarities:
+
+```text
+   + + + +        - - -
+   + + + +        - - -
+       → Magnetic field →
+```
+
+The polarity arrangement of a sunspot group is important for understanding solar magnetic activity and is used in systems such as **Hale classification**.
+
+---
+
+## Sunspot Life Cycle
+
+Sunspots are temporary structures and can evolve significantly during their lifetime.
+
+A simplified lifecycle is:
+
+```text
+Formation
+   ↓
+Growth
+   ↓
+Maximum development
+   ↓
+Decay
+   ↓
+Disappearance
+```
+
+Individual sunspots may last for days to weeks, while larger and more complex groups can persist for longer periods.
+
+---
+
+## Sunspot Number
+
+The number of sunspots varies with time.
+
+A commonly used measure is the **Wolf sunspot number**, also called the **relative sunspot number**:
+
+$$
+R = k(10g+s)
+$$
+
+where:
+
+* \(R\) = relative sunspot number
+* \(g\) = number of sunspot groups
+* \(s\) = number of individual sunspots
+* \(k\) = observatory-dependent correction factor
+
+The sunspot number is an important indicator of solar activity.
+
+---
+
+## Solar Cycle
+
+Sunspot activity follows an approximately **11-year cycle**.
+
+During a solar cycle:
+
+```text
+Solar Minimum
+      ↓
+Increasing activity
+      ↓
+Solar Maximum
+      ↓
+Decreasing activity
+      ↓
+Solar Minimum
+```
+
+During **solar maximum**, the number of sunspots generally increases.
+
+During **solar minimum**, relatively few sunspots are observed.
+
+The Sun's magnetic field undergoes a complete polarity cycle over approximately **22 years**, with the magnetic polarity reversing around each solar maximum.
+
+---
+
+## Sunspots and Solar Activity
+
+Sunspots are associated with regions of strong magnetic activity.
+
+Magnetically complex sunspot groups can be associated with energetic solar events such as:
+
+* Solar flares
+* Coronal mass ejections (CMEs)
+* Solar energetic particles
+
+Therefore, studying sunspots is important for understanding **space weather**.
+
+---
+
+## Observing Sunspots
+
+Sunspots can be observed using:
+
+* Solar telescopes
+* Filtered optical telescopes
+* Solar imaging instruments
+* Space-based solar observatories
+
+**Never observe the Sun directly through an unfiltered telescope, binoculars, or camera viewfinder.** Appropriate solar-safe filters or dedicated solar observing equipment are essential.
+
+---
+
+## Data Analysis
+
+Sunspot observations can be analyzed to study:
+
+* Sunspot number
+* Sunspot area
+* Sunspot group evolution
+* Sunspot locations
+* Magnetic polarity
+* Hale classification
+* Solar-cycle variation
+* Relationship with solar flares
+
+Example data:
+
+```text
+Date        Group      Area     Number of Spots
+------------------------------------------------
+01-01-2020  12735      120      5
+02-01-2020  12735      145      7
+03-01-2020  12735      180      9
+```
+
+Such observations can be used to investigate how sunspot groups evolve with time.
 
 ---
 
 ## Project Structure
 
 ```text
-Hale-Classification/
+Sunspots/
 │
 ├── data/
 │   ├── raw/
-│   ├── processed/
-│   └── labels/
+│   └── processed/
 │
 ├── notebooks/
-│   └── analysis.ipynb
+│   └── sunspot_analysis.ipynb
 │
 ├── src/
-│   ├── preprocessing.py
-│   ├── feature_extraction.py
-│   ├── classification.py
-│   └── evaluation.py
+│   └── analysis.py
 │
 ├── results/
-│   ├── figures/
-│   └── tables/
+│   └── figures/
 │
 ├── requirements.txt
 │
@@ -97,188 +280,39 @@ Hale-Classification/
 
 ---
 
-## Methodology
-
-The general workflow of the project is:
-
-```text
-Solar Observations
-        │
-        ▼
-Data Collection
-        │
-        ▼
-Data Preprocessing
-        │
-        ▼
-Sunspot Group Identification
-        │
-        ▼
-Magnetic Polarity Analysis
-        │
-        ▼
-Feature Extraction
-        │
-        ▼
-Hale Classification
-        │
-        ▼
-Classification Results
-        │
-        ▼
-Performance Evaluation
-```
-
-### 1. Data Collection
-
-Solar observations are collected from the selected solar observation dataset.
-
-Depending on the dataset, the input may consist of solar images, magnetograms, or tabulated sunspot-group observations.
-
-### 2. Data Preprocessing
-
-The raw observations are cleaned and prepared for analysis.
-
-Typical preprocessing steps may include:
-
-* Removing invalid observations
-* Handling missing values
-* Normalizing measurements
-* Cropping relevant solar regions
-* Identifying sunspot groups
-* Converting dates and observation times into a consistent format
-
-### 3. Magnetic Polarity Analysis
-
-The magnetic polarity distribution of each sunspot group is analyzed.
-
-The relative locations and distribution of positive and negative magnetic regions are used to determine whether the group is:
-
-* Unipolar
-* Bipolar
-* Complex
-* Delta-type
-
-### 4. Feature Extraction
-
-Relevant features can be extracted from the observations, including:
-
-* Number of magnetic polarity regions
-* Positive and negative polarity areas
-* Distance between opposite polarities
-* Magnetic flux
-* Sunspot area
-* Number of umbrae
-* Penumbral structure
-* Polarity separation
-* Magnetic complexity
-
-### 5. Hale Classification
-
-The extracted characteristics are used to assign a Hale class to each sunspot group.
-
-For an automated classification system, machine-learning or image-processing techniques may be used.
-
-Possible approaches include:
-
-* Rule-based classification
-* Image processing
-* Machine learning
-* Convolutional Neural Networks (CNNs)
-* Feature-based classification
-
----
-
-## Classification Output
-
-The final output can contain a record for each sunspot group.
-
-Example:
-
-```text
-Date        Group ID       Hale Class
---------------------------------------
-2010-01-01  11000          β
-2010-01-02  11000          β-γ
-2010-01-03  11000          β-γ-δ
-```
-
-The results can then be used to study how the magnetic configuration of sunspot groups changes over time.
-
----
-
-## Evaluation
-
-If an automated classification model is developed, its performance can be evaluated using metrics such as:
-
-* Accuracy
-* Precision
-* Recall
-* F1-score
-* Confusion matrix
-
-For multiclass classification, the performance of each Hale class should be evaluated separately, since some classes may occur much less frequently than others.
-
----
-
 ## Applications
 
-Hale classification is useful in the study of **solar magnetic activity**.
+The study of sunspots has several applications:
 
-Potential applications include:
-
-* Solar flare prediction
-* Space-weather research
-* Identification of magnetically complex active regions
-* Statistical studies of sunspot groups
-* Analysis of solar-cycle activity
-* Automated processing of solar observations
-
----
-
-## Technologies
-
-Depending on the implementation, the project may use:
-
-* **Python**
-* NumPy
-* Pandas
-* Matplotlib
-* SciPy
-* SunPy
-* Astropy
-* Scikit-learn
-* OpenCV
-* TensorFlow/PyTorch
+* Understanding solar magnetic activity
+* Studying the solar cycle
+* Solar flare research
+* Space-weather forecasting
+* Studying the Sun's magnetic field
+* Understanding solar-terrestrial interactions
+* Long-term analysis of solar activity
 
 ---
 
 ## Future Work
 
-Possible extensions of this project include:
+This project can be extended to include:
 
-* Automating sunspot detection from solar images.
-* Automatically determining magnetic polarity.
-* Developing a deep-learning model for Hale classification.
-* Comparing Hale classification with other sunspot classification systems.
-* Studying the relationship between Hale classes and solar flares.
-* Developing a time-series analysis of sunspot magnetic evolution.
-* Integrating the classification system with real-time solar observations.
+* Automated sunspot detection from solar images.
+* Measurement of sunspot areas.
+* Tracking sunspot groups across the solar disk.
+* Hale classification of sunspot groups.
+* Analysis of sunspot cycles.
+* Correlation of sunspot activity with solar flares.
+* Machine-learning-based sunspot classification.
 
 ---
 
-## References
+## Conclusion
 
-The classification methodology should be based on established literature on sunspot magnetic classification and solar active regions.
+Sunspots are important indicators of the Sun's magnetic activity. Their formation, structure, evolution, magnetic polarity, and variation over the solar cycle provide valuable information about the behavior of the Sun.
 
-Useful resources include publications and databases from organizations such as:
-
-* NASA
-* NOAA
-* ESA
-* SRS database
-* National Solar Observatory
-* Solar Physics research databases
+Studying sunspots therefore forms an important foundation for understanding **solar physics and space weather**.
 
 ---
 
@@ -286,5 +320,4 @@ Useful resources include publications and databases from organizations such as:
 
 **Priyansh Sarkar**
 
-This project is intended for academic/research purposes and focuses on the analysis and classification of solar sunspot groups using their magnetic characteristics.
-
+This project is intended for educational and research purposes.
