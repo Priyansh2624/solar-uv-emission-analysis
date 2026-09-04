@@ -255,30 +255,6 @@ Such observations can be used to investigate how sunspot groups evolve with time
 
 ---
 
-## Project Structure
-
-```text
-Sunspots/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   └── sunspot_analysis.ipynb
-│
-├── src/
-│   └── analysis.py
-│
-├── results/
-│   └── figures/
-│
-├── requirements.txt
-│
-└── README.md
-```
-
----
 
 ## Applications
 
