@@ -296,4 +296,3 @@ Studying sunspots therefore forms an important foundation for understanding **so
 
 **Priyansh Sarkar**
 
-This project is intended for educational and research purposes.
