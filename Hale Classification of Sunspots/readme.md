@@ -36,7 +36,7 @@ A **simple bipolar** sunspot group containing both positive and negative polarit
        + + +              - - -
           → polarity separation
 ```
-
+![Hale Beta](images/hale_beta.png)
 **Configuration:** Simple bipolar
 
 ---
@@ -51,7 +51,7 @@ A complex region in which positive and negative polarities are distributed so ir
        -       +
     +       -       +
 ```
-
+![Hale Gamma](images/hale_gamma.png)
 **Configuration:** Complex / mixed polarity
 
 ---
@@ -68,7 +68,7 @@ A β (bipolar) region that is sufficiently complex that **no single continuous l
 ```
 
 It still has an overall bipolar character, but the polarity distribution is too complicated for a simple β classification.
-
+![Hale beta_gamma](images/hale_beta_gamma.png)
 **Configuration:** Complex bipolar
 
 ---
@@ -90,7 +90,7 @@ A δ configuration occurs when **opposite-polarity umbrae lie within a common pe
        │                     │
        └─────────────────────┘
 ```
-
+![Hale delta](images/hale_delta.png)
 The important point is:
 
 > **δ does not describe the overall bipolar/complex structure by itself. It describes the presence of opposite-polarity umbrae within a common penumbra.**
@@ -113,7 +113,7 @@ A generally **β (simple bipolar)** region containing one or more **δ configura
 Bipolar + opposite-polarity umbrae
          in common penumbra
 ```
-
+![Hale Beta Delta](images/hale_beta_delta.png)
 **Meaning:**
 
 > Simple bipolar region + Delta configuration
@@ -130,7 +130,7 @@ A **βγ complex bipolar region** that also contains one or more δ configuratio
 Complex + Delta
 bipolar
 ```
-
+![Hale Beta Gamma Delta](images/hale_beta_gamma_delta.png)
 **Meaning:**
 
 > Complex bipolar region + Delta configuration
@@ -148,7 +148,7 @@ A **γ complex region** that also contains one or more δ configurations.
 ↓     ↓
 Complex + Delta
 ```
-
+![Hale Gamma Delta](images/hale_gamma_delta.png)
 **Meaning:**
 
 > Complex mixed-polarity region + Delta configuration
