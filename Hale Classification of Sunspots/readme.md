@@ -21,7 +21,7 @@ The region is dominated by a single magnetic polarity.
       + + + + +
         + + +
 ```
-
+![Hale Alpha](images/hale_alpha.png)
 **Configuration:** Single polarity
 
 ---
